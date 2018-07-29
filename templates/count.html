@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Count</h1>
+	<h1>Text: </h1>
+	{{ fulltext }}
+ 	<h1>Words: {{ count }}</h1>
+ 	<h1>Word Count:</h1>
+	{% for word, counttotal in sortedwords %}
+ 		{{ word }} - {{ counttotal }}
+ 		<br>
+ 		
+ 		
+ 	{% endfor %}
+</body>
+</html>
